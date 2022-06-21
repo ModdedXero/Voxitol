@@ -1,0 +1,14 @@
+/Voxitol.sln
+
+/.vs
+/bin
+/bin-int
+
+/Voxitol/vendor/glfw/bin
+/Voxitol/vendor/glfw/bin-int
+
+/Voxitol/vendor/imgui/bin
+/Voxitol/vendor/imgui/bin-int
+
+/Voxitol/vendor/yaml-cpp/bin
+/Voxitol/vendor/yaml-cpp/bin-int
