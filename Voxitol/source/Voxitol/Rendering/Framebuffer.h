@@ -51,7 +51,7 @@ namespace Voxitol::Rendering
 	class Framebuffer
 	{
 	public:
-		Framebuffer(const FramebufferSpecification& specs);
+		Framebuffer(const FramebufferSpecification& specs = FramebufferSpecification());
 		~Framebuffer();
 
 		void Invalidate();
@@ -69,7 +69,7 @@ namespace Voxitol::Rendering
 		{
 			// Log Error
 
-			if (index < m_ColorAttachments.size()) return; 
+			if (index < m_ColorAttachments.size()) return UINT32_MAX; 
 			return m_ColorAttachments[index];
 		}
 

@@ -98,6 +98,8 @@ namespace Voxitol::Rendering
 	Framebuffer::Framebuffer(const FramebufferSpecification& specs)
 		: m_Specification(specs)
 	{
+		if (!specs.Attachments.Attachments.size()) return;
+
 		for (auto spec : m_Specification.Attachments.Attachments)
 		{
 			if (!Utils::IsDepthFormat(spec.TextureFormat))
@@ -203,7 +205,7 @@ namespace Voxitol::Rendering
 		if (attachmentIndex < m_ColorAttachments.size())
 		{
 			// Log Error
-			return;
+			return -1;
 		}
 
 		glReadBuffer(GL_COLOR_ATTACHMENT0 + attachmentIndex);

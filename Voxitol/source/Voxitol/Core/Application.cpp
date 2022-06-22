@@ -3,6 +3,8 @@
 
 #include "Time.h"
 
+#include <Voxitol/Rendering/Renderer.h>
+
 namespace Voxitol
 {
 	void Application::Construct()
@@ -14,6 +16,7 @@ namespace Voxitol
 		m_IsConstructed = true;
 
 		Time::Construct();
+		Rendering::Renderer::Construct();
 	}
 
 	void Application::Run()

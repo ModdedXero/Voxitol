@@ -132,10 +132,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\Vendor\stb_image\stb_image.h" />
+    <ClInclude Include="Voxitol\Rendering\Shader.h" />
+    <ClInclude Include="Voxitol\Rendering\IndexBuffer.h" />
     <ClInclude Include="Voxitol\Core\Application.h" />
     <ClInclude Include="Voxitol\Core\Time.h" />
-    <ClInclude Include="vxpch.h" />
     <ClInclude Include="Voxitol\Display\Window.h" />
+    <ClInclude Include="Voxitol\Rendering\Framebuffer.h" />
+    <ClInclude Include="Voxitol\Rendering\Renderer.h" />
+    <ClInclude Include="Voxitol\Rendering\VertexBuffer.h" />
+    <ClInclude Include="Voxitol\Tools\FileSystem.h" />
+    <ClInclude Include="vxpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Vendor\glad\glad.c">
@@ -144,12 +150,18 @@
     <ClCompile Include="..\Vendor\stb_image\stb_image.cpp">
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="VoxitolMain.cpp" />
+    <ClCompile Include="Voxitol\Rendering\Shader.cpp" />
+    <ClCompile Include="Voxitol\Rendering\IndexBuffer.cpp" />
     <ClCompile Include="Voxitol\Core\Application.cpp" />
+    <ClCompile Include="Voxitol\Display\Window.cpp" />
+    <ClCompile Include="Voxitol\Rendering\Framebuffer.cpp" />
+    <ClCompile Include="Voxitol\Rendering\Renderer.cpp" />
+    <ClCompile Include="Voxitol\Rendering\VertexBuffer.cpp" />
+    <ClCompile Include="Voxitol\Tools\FileSystem.cpp" />
+    <ClCompile Include="VoxitolMain.cpp" />
     <ClCompile Include="vxpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Voxitol\Display\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Vendor\GLFW\GLFW.vcxproj">

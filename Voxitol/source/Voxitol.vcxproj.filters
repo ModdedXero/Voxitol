@@ -10,15 +10,50 @@
     <Filter Include="Vendor\stb_image">
       <UniqueIdentifier>{EDE315D3-D9DC-3425-020F-1AAAEE661431}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Voxitol">
+      <UniqueIdentifier>{7AB073EB-E68F-F286-EFA7-7D5D5B0659E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Voxitol\Core">
+      <UniqueIdentifier>{123150B7-FE93-DF5B-A719-1812935BABDE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Voxitol\Display">
+      <UniqueIdentifier>{DFB14D8F-4B3D-BB53-544E-3E48C0581754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Voxitol\Rendering">
+      <UniqueIdentifier>{47DAF1A9-B3F0-EF3F-FC67-7B6168BDC0C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Voxitol\Tools">
+      <UniqueIdentifier>{7AE889A2-E6A8-05D9-AFE3-4E561B634AB5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Vendor\stb_image\stb_image.h">
       <Filter>Vendor\stb_image</Filter>
     </ClInclude>
+    <ClInclude Include="Voxitol\Core\Application.h">
+      <Filter>Voxitol\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Voxitol\Core\Time.h">
+      <Filter>Voxitol\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Voxitol\Display\Window.h">
+      <Filter>Voxitol\Display</Filter>
+    </ClInclude>
+    <ClInclude Include="Voxitol\Rendering\Framebuffer.h">
+      <Filter>Voxitol\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Voxitol\Rendering\Renderer.h">
+      <Filter>Voxitol\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Voxitol\Rendering\VertexBuffer.h">
+      <Filter>Voxitol\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Voxitol\Tools\FileSystem.h">
+      <Filter>Voxitol\Tools</Filter>
+    </ClInclude>
     <ClInclude Include="vxpch.h" />
-    <ClInclude Include="Voxitol\Display\Window.h" />
-    <ClInclude Include="Voxitol\Core\Application.h" />
-    <ClInclude Include="Voxitol\Core\Time.h" />
+    <ClInclude Include="Voxitol\Rendering\IndexBuffer.h" />
+    <ClInclude Include="Voxitol\Rendering\Shader.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Vendor\glad\glad.c">
@@ -27,9 +62,27 @@
     <ClCompile Include="..\Vendor\stb_image\stb_image.cpp">
       <Filter>Vendor\stb_image</Filter>
     </ClCompile>
+    <ClCompile Include="Voxitol\Core\Application.cpp">
+      <Filter>Voxitol\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Voxitol\Display\Window.cpp">
+      <Filter>Voxitol\Display</Filter>
+    </ClCompile>
+    <ClCompile Include="Voxitol\Rendering\Framebuffer.cpp">
+      <Filter>Voxitol\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Voxitol\Rendering\Renderer.cpp">
+      <Filter>Voxitol\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Voxitol\Rendering\VertexBuffer.cpp">
+      <Filter>Voxitol\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Voxitol\Tools\FileSystem.cpp">
+      <Filter>Voxitol\Tools</Filter>
+    </ClCompile>
     <ClCompile Include="VoxitolMain.cpp" />
     <ClCompile Include="vxpch.cpp" />
-    <ClCompile Include="Voxitol\Display\Window.cpp" />
-    <ClCompile Include="Voxitol\Core\Application.cpp" />
+    <ClCompile Include="Voxitol\Rendering\IndexBuffer.cpp" />
+    <ClCompile Include="Voxitol\Rendering\Shader.cpp" />
   </ItemGroup>
 </Project>
