@@ -16,6 +16,9 @@
       <Filter>Vendor\stb_image</Filter>
     </ClInclude>
     <ClInclude Include="vxpch.h" />
+    <ClInclude Include="Voxitol\Display\Window.h" />
+    <ClInclude Include="Voxitol\Core\Application.h" />
+    <ClInclude Include="Voxitol\Core\Time.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Vendor\glad\glad.c">
@@ -24,7 +27,9 @@
     <ClCompile Include="..\Vendor\stb_image\stb_image.cpp">
       <Filter>Vendor\stb_image</Filter>
     </ClCompile>
-    <ClCompile Include="VoxitolApplication.cpp" />
+    <ClCompile Include="VoxitolMain.cpp" />
     <ClCompile Include="vxpch.cpp" />
+    <ClCompile Include="Voxitol\Display\Window.cpp" />
+    <ClCompile Include="Voxitol\Core\Application.cpp" />
   </ItemGroup>
 </Project>

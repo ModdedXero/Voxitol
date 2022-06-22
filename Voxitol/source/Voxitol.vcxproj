@@ -132,7 +132,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\Vendor\stb_image\stb_image.h" />
+    <ClInclude Include="Voxitol\Core\Application.h" />
+    <ClInclude Include="Voxitol\Core\Time.h" />
     <ClInclude Include="vxpch.h" />
+    <ClInclude Include="Voxitol\Display\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Vendor\glad\glad.c">
@@ -141,10 +144,12 @@
     <ClCompile Include="..\Vendor\stb_image\stb_image.cpp">
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="VoxitolApplication.cpp" />
+    <ClCompile Include="VoxitolMain.cpp" />
+    <ClCompile Include="Voxitol\Core\Application.cpp" />
     <ClCompile Include="vxpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Voxitol\Display\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Vendor\GLFW\GLFW.vcxproj">

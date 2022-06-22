@@ -2,12 +2,7 @@
 
 namespace Voxitol
 {
-	struct WindowSpecs
-	{
-
-	};
-
-	class WindowHost
+	class VertexBuffer
 	{
 	public:
 
